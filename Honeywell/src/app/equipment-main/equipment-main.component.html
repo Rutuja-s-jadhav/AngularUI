@@ -1,0 +1,42 @@
+<form #Equipment="ngForm" (ngSubmit)="sendData()">
+    <div style="position: relative; left: 133px;">
+        <div class="tOf" style="position: relative; top: 10px; left: 93px;">Project
+            Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                [(ngModel)]="formData.projectNumber" name="Of" required="" size="3" type="number">
+            <br />
+        </div>
+
+        <div class="tOf" style="position: relative; top: 30px; left: 93px;" value="equip">Equipment
+            ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                [(ngModel)]="formData.EquipmentID" name="Of" required="" size="3" type="number">
+            <br />
+        </div>
+        <div style="margin:10px">
+            <div style="position: relative; top: 45px; left: 83px;">Equipment
+                Type&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;
+                <select [(ngModel)]="formData.equipmentType" required="" name="type" class="box1" size="">
+                    <option value="Exhaust Fan">Exhaust Fan</option>
+                    <option value="Room Units">Room Units</option>
+                    <option value="Unitary Heat">Unitary Heat</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="position: relative; top: 43px; left: 90px;" class="name">Name used in
+            Spec&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.equipmentName" required=""
+                name="eName" id="equipmenttype" size="37" type="text">
+
+        </div>
+        <div class="tOf" style="position: relative; top: 50px; left: 90px;">Typical
+            Of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                [(ngModel)]="formData.typicalOf" name="Offff" required="" size="3" type="text">
+            
+        </div>
+        <div style="position: relative; top: 5px; left: 125px;">
+            <button style="position: relative; top: 60px; left: -31px;" class="but2" type="submit">Save</button>
+        </div>
+        <div style="position: relative; top: 5px; left: 125px;">
+            <button style="position: relative; top: 60px; left: -31px;" [disabled]="Equipment.invalid" class="but2"
+                (click)="redirect()" type="submit">Next</button>
+        </div>
+    </div>

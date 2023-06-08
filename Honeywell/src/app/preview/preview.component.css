@@ -1,0 +1,185 @@
+
+ 
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  /* .sidenav1 {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+  } */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 10px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 2px 6px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #131212;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .content{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+   
+    background-size: cover;
+    background-position: top center;
+  }
+  .details {
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2.5px solid rgb(255, 255, 255);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  }
+  .bit1{
+    font-size: 30px;
+    position: relative;
+    top: 0%;
+    left: 35%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 600px;
+    padding-top: 80px;
+}
+  .bit{
+    font-size: 30px;
+    position: relative;
+    top: 0%;
+    left: 35%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 300px;
+    padding-top: 120px;
+}
+
+.bitt{
+    font-size: 30px;
+    position: relative;
+    top: 0%;
+    left: 35%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 630px;
+    padding-top: 100px;
+}
+
+.div2{
+    font-size: 10px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    
+}
+.heading{
+  font-size: 15px;
+  position: relative;
+  top: 0%;
+  left: 35%;
+  max-width: fit-content;
+  text-align: center;
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.details:hover {
+  background: #06D85F;
+}
+
+.wrapper {
+  position: relative;
+  top: 0%;
+  left: 35%;
+  max-width: fit-content;
+  text-align: center;
+  padding-left: 800px;
+}
+
+
+.wrapper a {
+  max-width: fit-content;
+}
+.content p {
+  max-width: fit-content;
+  color: white;
+  position: relative;
+  top: -10%;
+  left: 60%;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 100;
+}

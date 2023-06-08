@@ -1,0 +1,30 @@
+
+<form #ProjectInfo="ngForm" (ngSubmit)="sendData()">
+    <div class="main">
+    <div style="margin:70px">
+       <div style="position: relative; top: 0px; left: 53px;">
+       Choose the unit of measurement for this specification:<br><br /></div>
+       <div style="position: relative; top: 0px; left: 53px;">
+       <select [(ngModel)]="formData.measurementType" required="" name="measurement" class="box1" size="">
+          <option value="English">English</option>
+          <option value="Metric">Metric</option>
+       </select>
+    </div>
+    <div style="position: relative; top: 10px; left: 53px; bottom: 5px;">
+       Type the header and footer information for this specification:</div>
+    <div style="position: relative; top: 15px; left: 83px;">
+       <div class="name">Project Name</div><input [(ngModel)]="formData.projectName" required="" name="pName"
+       size="45" type="text">
+    </div> <br />
+    <div style="position: relative; top: 15px; left: 83px;">
+       <div class="PN">Project Number</div><input [(ngModel)]="formData.projectNumber" name="pNumber" required=""
+        type="number">
+       <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 83px;">
+       <div class="">Prepared By</div><input [(ngModel)]="formData.preparedBy" size="45" name="pBy" type="text" required="">
+    </div> <br />
+ 
+    <div style="position: relative; top: 45px; left: 215px;">
+       <button class="but2" type="submit">Next</button>
+    </div></div></div>

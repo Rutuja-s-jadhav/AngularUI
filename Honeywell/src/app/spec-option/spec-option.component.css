@@ -1,0 +1,31 @@
+
+.container-tab{
+
+    padding: 2em 0;
+    border-style: solid;
+    border-color: rgb(21, 21, 19);
+  }
+  #Honeywell{margin-top: 50px;}
+  mat-card {
+    max-width: 50vw;
+    margin: 2em auto;
+  }
+  
+  .top-row{
+    padding: 1em 0;
+  }
+  .row-base{
+    margin-left: 15em;
+    line-height: 3em;
+  }
+  #row-top-row{
+    background-color: #17a2b8;
+    color: white;
+    }
+    .bt{
+      width: 200px;
+      background-color: #17a2b8;
+      color: white;
+    }
+  
+  

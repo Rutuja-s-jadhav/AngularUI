@@ -1,0 +1,85 @@
+<p class ="text -center fs-3" [ngClass]="isAccountCreated ? 'text-success pb-1':'text-danger pb-1'">
+    {{displayMsg}}</p><!-- <div class="container-tab mat-elevation-z8"> -->
+     <mat-card >
+       <div class="container-tab mat-elevation-z8">
+         <mat-card-content>
+            <!-- class="border p-3 rounded-3" -->
+            <form [formGroup]="SignUpForm" (ngSubmit)="SignUpSubmited()" >
+             <h1>SignUp</h1>
+             <div class="example-container">
+              <mat-form-field appearance="fill">
+                  <mat-label>LoginId</mat-label>
+                  <input matInput formControlName="loginId" placeholder="Enter your Name">
+               <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+                  <mat-error *ngIf="LoginId.errors?.['required'] && (LoginId.touched || LoginId.dirty)">First Name is Required.</mat-error>
+                 
+              </mat-form-field>
+            </div>
+             <div class="example-container">
+               <mat-form-field appearance="fill">
+                   <mat-label>Name</mat-label>
+                   <input matInput formControlName="name" placeholder="Enter your Name">
+                <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+                   <mat-error *ngIf="Name.errors?.['required'] && (Name.touched || Name.dirty)">First Name is Required.</mat-error>
+                   <mat-error *ngIf="Name.errors?.['minlength'] && (Name.touched || Name.dirty)"> First Name is too short.</mat-error>
+                   <mat-error *ngIf="Name.errors?.['pattern'] && (Name.touched || Name.dirty)">First Name should start with Alphabet. </mat-error>
+               </mat-form-field>
+             </div>
+   
+   
+             <div class="example-container">
+               <mat-form-field appearance="fill">
+                   <mat-label>EmailId</mat-label>
+                   <input matInput formControlName="emailId" placeholder="Enter your Email">
+                  <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+                   <mat-error *ngIf="EmailId.errors?.['required'] && (EmailId.touched || EmailId.dirty)">Email is Required.</mat-error>
+                   <mat-error *ngIf="EmailId.errors?.['email'] && (EmailId.touched || EmailId.dirty)">Email is Invalid.</mat-error>
+               </mat-form-field>
+              </div>
+   
+   
+             <div class="example-container">
+               <mat-form-field appearance="fill">
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
+                   <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                   <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
+                   <mat-error *ngIf="Password.errors?.['required'] && (Password.touched || Password.dirty)"> Password is Required. </mat-error>
+                   <mat-error *ngIf="Password.errors?.['minlength'] || Password.errors?.['maxlength'] &&(Password.touched || Password.dirty)">
+                   Password should be at least 6 and at the max 15 characters long.</mat-error>
+               </mat-form-field>
+             </div>
+   
+   
+             <div class="example-container">
+               <mat-form-field appearance="fill">
+                 <mat-label>Confirm Password</mat-label>
+                 <input matInput formControlName="rpwd" [type]="hide ? 'password' : 'text'">
+                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                 </button>
+                 <mat-error [ngStyle]="{'display': repeatPass}">
+                 Repeat Pass is Invalid.</mat-error>
+               </mat-form-field>
+             </div>
+                                   <!-- class="example-full-width" -->
+   
+                <div class="example-container">
+               <div class="row" style="justify-content: center; text-align: center;">
+                 <div class="col-12 ">
+                   <div class="col-3 d-inline-block" >
+                     <button type="submit" [disabled]="SignUpForm.invalid" mat-raised-button mat-button style="background-color: #17a2b8; color: white;" >Register</button>
+                                             <!-- <a routerLink="app-login"  mat-raised-button class="m1-1">Login</a> --></div>
+                     <div class="col-3 d-inline-block" style="padding-left: 20px;">
+                                               <!-- <a routerLink="app-login"  mat-raised-button class="m1-1">Login</a> -->
+                        <a routerLink="/login"><button type="submit" mat-raised-button mat-button >Login</button></a>
+                     </div>
+                 </div>
+               </div>
+             </div>
+            </form>
+       </mat-card-content>
+     </div>
+   </mat-card>
+   <!-- </div> -->
+   

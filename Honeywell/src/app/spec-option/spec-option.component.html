@@ -1,0 +1,79 @@
+
+<mat-card id="Honeywell">
+    <!-- <form [formGroup]="addForms" (ngSubmit)="SaveData()"> -->
+  <table mat-table [dataSource]="dataSource"  >
+  
+  
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element">
+  
+          <!-- <input  type="radio" placeholder="Status"  name="status" formControlName="status">
+          <label value="Yes">Yes</label>
+          <input  type="radio" placeholder="Status"  name="status" formControlName="status">
+          <label value="No">No</label> -->
+        <mat-radio-group  aria-label="Select an option">
+        <mat-radio-button value="Yes">Yes</mat-radio-button>
+        <mat-radio-button value="No">No</mat-radio-button>
+      </mat-radio-group>
+  
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="questions">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td  mat-cell *matCellDef="let element"> {{element.questions}} </td>
+      <!-- <input readonly type="text" placeholder="Questions" name="questions" formControlName="questions"> -->
+    </ng-container>
+  
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <br>
+  
+  <button type="submit"  mat raised-button mat-button style="background-color: #17a2b8; color: white; width: 150px; text-align: center;">Submit</button>
+  <!-- (click) = "changeStatus('{{element.id}}', '{{element.status}}')" -->
+  <!-- </form> -->
+  
+  </mat-card>
+  <div class="container">
+    <div class="row top-row">
+      <div class="col-xs-12 row end-xs">
+  
+     </div>
+    </div>
+      </div>
+  <!-- <mat-card >
+    <div class=" mat-elevation-z8">
+  
+  
+    <div class="container mt-3" style="margin-left: 25px; margin-right: 25px; padding: 30px;" >
+      <form [formGroup]="addForms" (ngSubmit)="SaveData()">
+  
+        <mat-form-field>
+              <input matInput type="text" placeholder="Questions" name="questions" formControlName="questions">
+            </mat-form-field>
+  
+            <div class="col-sm-3 my-1">
+              <mat-form-field apperance="fill">
+              <input matInput type="text" placeholder="Status"  name="status" formControlName="status">
+            </mat-form-field>
+            </div>
+  
+  
+  
+                <div class="col-auto my-3 mx-2 text-center">
+                  <button type="submit" class="btn"  mat-raised-button style="background-color: #17a2b8; color: white; width: 150px;">Submit</button>
+              </div>
+  
+  
+      </form>
+    </div>
+  
+    </div>
+    </mat-card> -->
+  
+  
+  
+  

@@ -1,0 +1,40 @@
+<form #ExFan="ngForm" (ngSubmit)="sendData()">
+    <div style="position: relative; left: 133px;">
+
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">Equipment ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.equipmentID" required="" name="eName" id = "equipmenttype"size="37" type="number">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Run Condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.runConditions"  name="Of" required="" size="3" type="text">
+            <br />
+        </div>
+    
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Fan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.fan"  name="Of" required="" size="3" type="text">
+            <br />
+        </div>
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">Filter Monitoring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.filterMonitoring" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Misc Monitoring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.miscMonitoring" name="Of" required="" size="3" type="text">
+            <br />
+        </div></div>
+        <div style="position: relative; top: 25px; left: 53px;">
+    
+            <div class="tOf" style="position: relative; top: 10px; left: 40px;">Damper Control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                [(ngModel)]="formData.damperControl" name="Of" required="" size="3" type="text">
+                <br />
+            </div></div>
+        <div style="position: relative; top: 65px; left: 125px;">
+            <button style="position: relative; top: 60px; left: -31px;"  class="but2" type="submit">Next</button>
+        </div></div>

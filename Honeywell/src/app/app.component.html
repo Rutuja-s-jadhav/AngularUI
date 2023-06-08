@@ -1,0 +1,79 @@
+<body>
+    <div class="sidenav">
+        <div class="bannerside">
+            <img alt="project logo" src="https://www.ctrlspecbuilder.com/ctrlspecbuilder/images/calculator.jpg"
+                border="0">
+        </div>
+       
+
+        <div class="box">
+            <p> <b><u> Other Options</u></b> </p>
+            <div class="boxes">
+                <a href="http://localhost:4200/equipment-main"><b><u>Add Equipment</u></b></a>
+                <a><b><u>Point Summary</u></b></a>
+                <a><b><u>Glossary</u></b></a>
+                <a><b><u>Give us Feedback</u></b></a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <table border="0" cellspacing="0" cellpadding="0" style="width:100%; height:100%">
+            <tr>
+                <td colspan="2" height="78" class="headerFrame"
+                    style="background: url('\Assignment\AngularUI\Honeywell\src\app') no-repeat; background-size: 100%;">
+                    <div class="logo">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:485px" align="right">
+                                    <div style="position: relative; top: 0px; left: 350px;">
+                                        <a href="http://localhost:4200/project-info" class='linkglossary'>Close</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0"
+                        style="padding-top:39px; padding-bottom:0px;padding-left: 45px;">
+                        <tr style="font-weight:lighter;">
+                            <td nowrap="nowrap" class="linkOff" onMouseOver="this.className='linkOn';"
+                                onMouseOut="this.className='linkOff';" onClick="">
+                                <a href="http://localhost:4200/project-info" class="linkOff">Project Info</a>
+                            </td>
+                            <td style="font-size:18px">&rarr;</td>
+                            <td nowrap="nowrap" class="linkOff" onMouseOver="this.className='linkOn';"
+                                onMouseOut="this.className='linkOff';" onClick="">
+                                <a href="http://localhost:4200/equipment-main" class="linkOff">Equipment</a>
+                            </td>
+                            <td style="font-size:18px">&rarr;</td>
+                            <td nowrap="nowrap" class="linkOff" onMouseOver="this.className='linkOn';"
+                                onMouseOut="this.className='linkOff';" onClick="">
+                                <a href="http://localhost:4200/spec-option" class="linkOff">Spec Options</a>
+                            </td>
+                            <td style="font-size:18px">&rarr;</td>
+                            <td nowrap="nowrap" class="linkOff" onMouseOver="this.className='linkOn';"
+                                onMouseOut="this.className='linkOff';" onClick="">
+                                <a href="http://localhost:4200/preview" class="linkOff">Preview</a>
+                            </td>
+                            <td style="font-size:18px">&rarr;</td>
+                            <td nowrap="nowrap" class="linkOff" onMouseOver="this.className='linkOn';"
+                                onMouseOut="this.className='linkOff';" onClick="">
+                                <a href="http://localhost:4200/download" class="linkOff">Download</a>
+                            </td>
+                            <div class="nnn"  style=" padding-left: 550%; width:100%; height:20%">
+
+                                <a routerLink="" id="logout" *ngIf="Isloggedin" (click)="logout()"  mat-raised-button class="m1-1">Log out</a>
+    
+                            </div>
+                        </tr>
+                    </table>
+                    <table name="tabs" id="tabs" border="0" cellpadding="0" cellspacing="0" style="margin-top:5px;">
+                        <tr>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>

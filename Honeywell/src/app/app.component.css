@@ -1,0 +1,92 @@
+.box{
+	
+	padding: 30px;
+	padding-top: 80px;
+}
+.boxes{
+	border-style: ridge;
+	border-color: #131212;
+	background-color: linear-gradient( #75D7FE,rgb(214, 200, 200));
+}
+.bannerside{
+	padding-top: 100px;
+	padding-left: 50px;
+
+	width: 150%;
+
+    height: 65px;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+.sidenav {
+	margin-top: 7%;
+    height: 90%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color:  #9dd6ec; */
+    background: linear-gradient(to bottom, white, rgba(32, 247, 244, 0.89));
+    overflow-x: hidden;
+    padding-top: 10px;
+  }
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #131212;
+  }
+
+  .sidenav a, .dropdown-btn {
+    padding: 6px 2px 6px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+.logo{
+    background-image: url(ctrlspecbuilder_logo.png);
+    margin-top: 10px ;
+    float: left;
+    background-position: center;
+    background-size: auto;
+    height:60px;
+    width: 180px;
+}
+.banner{
+    background-image: url(CtrlSpecBuilderBanner.jpg);
+     width: 150%;
+    height: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.linkglossary{
+    color: #020000;
+    font-size: small;
+    font-weight: normal;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.linkOff{
+    color: #020000;
+    font-size: small;
+    font-weight:normal;
+    font-family:Arial, Helvetica, sans-serif;
+}

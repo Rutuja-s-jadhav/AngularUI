@@ -1,0 +1,202 @@
+/* .box{
+	
+	padding: 30px;
+	padding-top: 80px;
+}
+.boxes{
+	border-style: ridge;
+	border-color: #131212;
+	background-color: linear-gradient( #75D7FE,white);
+} */
+/* .banner{
+	padding-top: 100px;
+	padding-left: 50px;
+	
+	width: 150%;
+
+    height: 65px;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+} */
+
+/* .sidenav {
+	
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  #75D7FE;
+    overflow-x: hidden;
+    padding-top: 10px;
+  } */
+  /* .sidenav a:hover, .dropdown-btn:hover {
+    color: #131212;
+  }
+
+  .sidenav a, .dropdown-btn {
+    padding: 6px 2px 6px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  } */
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  /* .active {
+    background-color: green;
+    color: white;
+  }
+   */
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  /* .dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+  } */
+  
+  /* Optional: Style the caret down icon */
+  /* .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  } */
+  /* .content{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+   
+    background-size: cover;
+    background-position: top center;
+  } */
+  .heading{
+	color: #131212;
+	font-size: 15px;
+	position: relative;
+	top: 0%;
+	left: 35%;
+	max-width: fit-content;
+	text-align: center;
+	padding-left: 180px;
+	padding-top: 50px;
+  }
+  .man{
+    font-size: 20px;
+    position: relative;
+    top: 0%;
+    left: 12%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.wrapper {
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 25%;
+	display: grid;
+	place-items: center;
+    padding-top: 30px;
+	
+  }
+
+  .king {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    display: grid;
+    place-items: center;
+      padding-top: 130px;
+    
+    }
+  .button{
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  }
+  .ending{
+    font-size: 15px;
+    position: relative;
+    top: 0%;
+    left: 12%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 120px;
+}
+.ending1{
+    font-size: 15px;
+    position: relative;
+    top: 0%;
+    left: 12%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.ending1 a:hover, .dropdown-btn:hover {
+    color: #131212;
+  }
+.ending2{
+    font-size: 15px;
+    position: relative;
+    top: 0%;
+    left: 12%;
+    max-width: fit-content;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.ending2 a:hover, .dropdown-btn:hover {
+    color: #131212;
+  }
+  .ending1 a, .dropdown-btn {
+    
+    text-decoration: none;
+    
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  .ending2 a, .dropdown-btn {
+    
+    text-decoration: none;
+    
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  

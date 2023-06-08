@@ -1,0 +1,57 @@
+<mat-card id="ctrlspecbuilder">
+    <div class="container-tab mat-elevation-z8">
+      <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+          <h1>Log In</h1>
+          <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>EmailId</mat-label>
+              <input matInput name="emailId" formControlName="emailId"
+                placeholder="Enter your emailId">
+              <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+              <mat-error *ngIf="EmailId.errors?.['required'] && (EmailId.touched || EmailId.dirty)">EmailId is
+                Required.</mat-error>
+                <mat-error *ngIf="EmailId.errors?.['email'] && (EmailId.touched || EmailId.dirty)">EmailId is
+                  Invalid</mat-error> 
+              </mat-form-field>
+          </div>
+          <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
+                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></button>
+                     <mat-error *ngIf="Password.errors?.['required'] && (Password.touched || Password.dirty)"> Password is Required. </mat-error>
+                     <mat-error *ngIf="Password.errors?.['minlength'] || Password.errors?.['maxlength'] &&(Password.touched || Password.dirty)">
+                     Password should be at least 6 and at the max 15 characters long.</mat-error>
+                 </mat-form-field>
+          </div>
+          
+          <div class="example-container">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <div class="d-grid">
+                  <button type="submit" mat-raised-button mat-button style="background-color: #17a2b8; color: white;"
+                    [disabled]="loginForm.invalid">Login</button>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 offset-3">
+            <div class="d-grid">
+              <div class="form-inline fr mt-4">
+                <a id="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  class="font-weight-bold"><a routerLink="/forgotpassword">forgot password?</a></a>
+                </div>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </div>
+  </mat-card>
+  
+  
+  
+  
+  <!-- (click)="navigateToFirst()" -->

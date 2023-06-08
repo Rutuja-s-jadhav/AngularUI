@@ -1,0 +1,80 @@
+<form #ExFan="ngForm" (ngSubmit)="sendData()">
+    <div style="position: relative; left: 133px;">
+
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">Equipment ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.equipmentID" required="" name="eName" id = "equipmenttype"size="37" type="number">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">zoneControl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.zoneControl" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">mixedAirDamper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.mixedAirDamper" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">minimunOutsideAir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.minimunOutsideAir" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">safeties&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.safeties" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">faceBypassDamper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.faceBypassDamper" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">cooling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.cooling" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">heatingHighDischargeLimit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.heatingHighDischargeLimit" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">EnvironmentalIndex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.environmentalIndex" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Run Condition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.runConditions"  name="Of" required="" size="3" type="text">
+            <br />
+        </div>
+    
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Fan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.fan"  name="Of" required="" size="3" type="text">
+            <br />
+        </div>
+    </div>
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div style="position: relative; top: 10px; left: 40px;" class="name">Filter Monitoring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input [(ngModel)]="formData.filterMonitoring" required="" name="eName" id = "equipmenttype"size="37" type="text">
+    </div> <br />
+    </div>
+    
+    <div style="position: relative; top: 25px; left: 53px;">
+    
+        <div class="tOf" style="position: relative; top: 10px; left: 40px;">Misc Monitoring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            [(ngModel)]="formData.miscMonitoring" name="Of" required="" size="3" type="text">
+            <br />
+        </div></div>
+        <div style="position: relative; top: 25px; left: 53px;">
+    
+            <div class="tOf" style="position: relative; top: 10px; left: 40px;">Heating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                [(ngModel)]="formData.heating" name="Of" required="" size="3" type="text">
+                <br />
+            </div></div>
+        <div style="position: relative; top: 65px; left: 125px;">
+            <button style="position: relative; top: 60px; left: -31px;"  class="but2" type="submit">Next</button>
+        </div></div>
